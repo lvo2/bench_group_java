@@ -1,0 +1,107 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "get",
+      "args": [
+        "[https://www.google.com/]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.google.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 1415
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "searchFor",
+      "args": [
+        "[qaf github infostretch]"
+      ],
+      "result": "fail",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//input[@name='q'], using=xpath}"
+          ],
+          "result": "id: 9c8fbb0a-6935-4f1a-b503-897136dc38db",
+          "subLogs": [],
+          "duration": 28
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "By.xpath: //input[@name='q']",
+            "{}"
+          ],
+          "result": "OK",
+          "subLogs": [],
+          "duration": -1
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.xpath: //input[@name='q']",
+            "{\"value\":[\"qaf github infostretch\"],\"id\":\"9c8fbb0a-6935-4f1a-b503-897136dc38db\"}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 640
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "When search for 'Aaaaaaaaaaaaaaaaaaaaaaaaaaaa'",
+      "args": [
+        "[Aaaaaaaaaaaaaaaaaaaaaaaaaaaa]"
+      ],
+      "result": "Not Run",
+      "subLogs": [],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given get 'https://www.google.com/'",
+      "type": "TestStepPass",
+      "screenshot": null,
+      "duration": 5190,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "When search for 'qaf github infostretch'",
+      "type": "TestStepFail",
+      "screenshot": "../img/SampleTest_pw3wjxswuq5p60317.png",
+      "duration": 723,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "Cannot invoke \"org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)\" because \"this.searchContext\" is null",
+          "type": "Fail",
+          "screenshot": null,
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "When search for 'Aaaaaaaaaaaaaaaaaaaaaaaaaaaa'",
+      "type": "TestStep",
+      "screenshot": null,
+      "duration": 0,
+      "threshold": 0,
+      "subCheckPoints": []
+    }
+  ],
+  "errorTrace": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)\" because \"this.searchContext\" is null\r\n\tat .When search for 'qaf github infostretch'(scenarios/Sample.feature:6)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy27.sendKeys(Unknown Source)\r\n\tat com.qmetry.qaf.example.pages.GoogleHomePage.sendTextToSearchBox(GoogleHomePage.java:15)\r\n\tat com.qmetry.qaf.example.steps.StepsLibrary.searchFor(StepsLibrary.java:21)\r\n\tat com.qmetry.qaf.automation.step.JavaStep.doExecute(JavaStep.java:150)\r\n\tat com.qmetry.qaf.automation.step.BaseTestStep.execute(BaseTestStep.java:149)\r\n\tat com.qmetry.qaf.automation.step.StringTestStep.execute(StringTestStep.java:127)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.execute(Scenario.java:174)\r\n\tat com.qmetry.qaf.automation.step.client.Scenario.scenario(Scenario.java:237)\r\n"
+}

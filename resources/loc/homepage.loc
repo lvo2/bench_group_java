@@ -1,0 +1,2 @@
+input.search=xpath=//input[@name='q']
+button.search=name=btnG

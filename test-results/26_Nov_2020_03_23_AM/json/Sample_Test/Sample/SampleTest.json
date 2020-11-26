@@ -1,0 +1,224 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "get",
+      "args": [
+        "[https://www.google.com/]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.google.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 1298
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "searchFor",
+      "args": [
+        "[qaf github infostretch]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//input[@name='q'], using=xpath}"
+          ],
+          "result": "id: 8bf43b61-45ca-47f6-af49-ebb1af5138c1",
+          "subLogs": [],
+          "duration": 22
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "By.xpath: //input[@name='q']",
+            "{}"
+          ],
+          "result": "OK",
+          "subLogs": [],
+          "duration": -1
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.xpath: //input[@name='q']",
+            "{\"value\":[\"qaf github infostretch\"],\"id\":\"8bf43b61-45ca-47f6-af49-ebb1af5138c1\"}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 564
+        },
+        {
+          "commandName": "sendKeys",
+          "args": [
+            "[123, input.search]"
+          ],
+          "result": "success",
+          "subLogs": [
+            {
+              "commandName": "findElement",
+              "args": [
+                "{value=//input[@name='q'], using=xpath}"
+              ],
+              "result": "id: acc878e9-0cd5-48d2-96a7-5b88887ae951",
+              "subLogs": [],
+              "duration": 14
+            },
+            {
+              "commandName": "findElement",
+              "args": [
+                "By.xpath: //input[@name='q']",
+                "{}"
+              ],
+              "result": "OK",
+              "subLogs": [],
+              "duration": -1
+            },
+            {
+              "commandName": "sendKeysToElement",
+              "args": [
+                "By.xpath: //input[@name='q']",
+                "{\"value\":[\"123\"],\"id\":\"acc878e9-0cd5-48d2-96a7-5b88887ae951\"}"
+              ],
+              "result": "sendKeysToElement:null",
+              "subLogs": [],
+              "duration": 88
+            }
+          ],
+          "duration": -1
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "searchFor",
+      "args": [
+        "[Aaaaaaaaaaaaaaaaaaaaaaaaaaaa]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=//input[@name='q'], using=xpath}"
+          ],
+          "result": "id: acc878e9-0cd5-48d2-96a7-5b88887ae951",
+          "subLogs": [],
+          "duration": 244
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "By.xpath: //input[@name='q']",
+            "{}"
+          ],
+          "result": "OK",
+          "subLogs": [],
+          "duration": -1
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.xpath: //input[@name='q']",
+            "{\"value\":[\"Aaaaaaaaaaaaaaaaaaaaaaaaaaaa\"],\"id\":\"acc878e9-0cd5-48d2-96a7-5b88887ae951\"}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 589
+        },
+        {
+          "commandName": "sendKeys",
+          "args": [
+            "[123, input.search]"
+          ],
+          "result": "success",
+          "subLogs": [
+            {
+              "commandName": "findElement",
+              "args": [
+                "{value=//input[@name='q'], using=xpath}"
+              ],
+              "result": "id: 26fa8744-b840-42c9-89ad-d61ea2f0dabd",
+              "subLogs": [],
+              "duration": 193
+            },
+            {
+              "commandName": "findElement",
+              "args": [
+                "By.xpath: //input[@name='q']",
+                "{}"
+              ],
+              "result": "OK",
+              "subLogs": [],
+              "duration": -1
+            },
+            {
+              "commandName": "sendKeysToElement",
+              "args": [
+                "By.xpath: //input[@name='q']",
+                "{\"value\":[\"123\"],\"id\":\"26fa8744-b840-42c9-89ad-d61ea2f0dabd\"}"
+              ],
+              "result": "sendKeysToElement:null",
+              "subLogs": [],
+              "duration": 219
+            }
+          ],
+          "duration": -1
+        }
+      ],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given get 'https://www.google.com/'",
+      "type": "TestStepPass",
+      "screenshot": null,
+      "duration": 4640,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "When search for 'qaf github infostretch'",
+      "type": "TestStepPass",
+      "screenshot": null,
+      "duration": 734,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "sendKeys '123' into 'input.search'",
+          "type": "TestStepPass",
+          "screenshot": null,
+          "duration": 105,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    },
+    {
+      "message": "When search for 'Aaaaaaaaaaaaaaaaaaaaaaaaaaaa'",
+      "type": "TestStepPass",
+      "screenshot": null,
+      "duration": 1254,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "sendKeys '123' into 'input.search'",
+          "type": "TestStepPass",
+          "screenshot": null,
+          "duration": 415,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    }
+  ],
+  "errorTrace": null
+}

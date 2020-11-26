@@ -1,0 +1,117 @@
+{
+  "seleniumLog": [
+    {
+      "commandName": "get",
+      "args": [
+        "[https://www.google.com/]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "get",
+          "args": [
+            "{url=https://www.google.com/}"
+          ],
+          "result": "null",
+          "subLogs": [],
+          "duration": 1421
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "searchFor",
+      "args": [
+        "[qaf github infostretch]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElement",
+          "args": [
+            "{value=q, using=name}"
+          ],
+          "result": "id: 39827da3-cba9-4505-b7f9-a5bc4090fca5",
+          "subLogs": [],
+          "duration": 20
+        },
+        {
+          "commandName": "findElement",
+          "args": [
+            "By.name: q",
+            "{}"
+          ],
+          "result": "OK",
+          "subLogs": [],
+          "duration": -1
+        },
+        {
+          "commandName": "sendKeysToElement",
+          "args": [
+            "By.name: q",
+            "{\"value\":[\"qaf github infostretch\"],\"id\":\"39827da3-cba9-4505-b7f9-a5bc4090fca5\"}"
+          ],
+          "result": "sendKeysToElement:null",
+          "subLogs": [],
+          "duration": 657
+        }
+      ],
+      "duration": -1
+    },
+    {
+      "commandName": "verifyLinkWithPartialTextPresent",
+      "args": [
+        "[qaf]"
+      ],
+      "result": "success",
+      "subLogs": [
+        {
+          "commandName": "findElements",
+          "args": [
+            "{value=qaf, using=partial link text}"
+          ],
+          "result": "[id: 5cd1a663-2c72-434f-ae86-a6c5c1dd2b1f, id: 8447a0f4-1a6d-4f98-a0d8-42f877c8f793, id: c5bb4b81-607c-456d-8746-da90e68aef9f, id: eabbf6a6-2c8e-40c4-9b88-6e0d15849d1f, id: 9509d087-62ae-4fc5-8554-ed92780b767b, id: 664c9f9b-28a5-4c77-a07d-701c30b9f226, id: 13aefa6d-0e77-4e08-88ea-b0139477da5e, id: d5dd004b-9ff4-4d41-bec7-b195ef656a9e, id: 9f6a0313-7227-4c37-bcfa-9a471d21bde5]",
+          "subLogs": [],
+          "duration": 233
+        }
+      ],
+      "duration": -1
+    }
+  ],
+  "checkPoints": [
+    {
+      "message": "Given get 'https://www.google.com/'",
+      "type": "TestStepPass",
+      "screenshot": null,
+      "duration": 5729,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "When search for 'qaf github infostretch'",
+      "type": "TestStepPass",
+      "screenshot": null,
+      "duration": 706,
+      "threshold": 0,
+      "subCheckPoints": []
+    },
+    {
+      "message": "Then verify link with partial text 'qaf' is present",
+      "type": "TestStepPass",
+      "screenshot": null,
+      "duration": 807,
+      "threshold": 0,
+      "subCheckPoints": [
+        {
+          "message": "Expected By.partialLinkText: qaf present : Actual By.partialLinkText: qaf present",
+          "type": "Pass",
+          "screenshot": "../img/SampleTest_14gd7uhenvzuc27103.png",
+          "duration": 0,
+          "threshold": 0,
+          "subCheckPoints": []
+        }
+      ]
+    }
+  ],
+  "errorTrace": null
+}

@@ -1,0 +1,280 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606298566555,
+      "duration": 6147,
+      "result": "fail",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606298626013,
+      "duration": 6215,
+      "result": "fail",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606298727598,
+      "duration": 9075,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606302535264,
+      "duration": 6287,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606302649249,
+      "duration": 6355,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606302719880,
+      "duration": 6120,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606360163667,
+      "duration": 6039,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606360339925,
+      "duration": 6523,
+      "result": "fail",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606360374277,
+      "duration": 5695,
+      "result": "fail",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606360692901,
+      "duration": 8483,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4.0,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606360727374,
+      "duration": 8087,
+      "result": "pass",
+      "passPer": 0.0
+    },
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@Sample"
+        ],
+        "lineNo": 4,
+        "name": "Sample Test",
+        "reference": "scenarios/Sample.feature",
+        "resultFileName": "SampleTest_1",
+        "sign": "scenarios.Sample.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606360746506,
+      "duration": 6910,
+      "result": "pass",
+      "passPer": 0.0
+    }
+  ]
+}

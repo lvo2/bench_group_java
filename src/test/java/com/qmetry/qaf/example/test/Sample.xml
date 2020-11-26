@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sample" verbose="0">
+
+	<test name="Test" enabled="true">
+		<groups>
+			<run>
+				<include name="@Sample" />				
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.qmetry.qaf.automation.step.client.gherkin.GherkinScenarioFactory" />
+		</classes>
+	</test>
+
+</suite>
