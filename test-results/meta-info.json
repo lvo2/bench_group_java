@@ -1,6 +1,11 @@
 {
   "reports": [
     {
+      "name": "Sample",
+      "dir": "test-results/27_Nov_2020_02_00_PM/json",
+      "startTime": 1606485704049
+    },
+    {
       "name": "TC01",
       "dir": "test-results/27_Nov_2020_09_36_AM/json",
       "startTime": 1606472412149

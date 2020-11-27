@@ -4,7 +4,7 @@
 	<test name="Test" enabled="true">
 		<groups>
 			<run>
-				<include name="@Sample" />				
+				<include name="@TC01.01" />				
 			</run>
 		</groups>
 		<classes>
