@@ -1,55 +1,57 @@
 package com.qmetry.qaf.example.steps;
 
-import static com.qmetry.qaf.automation.step.CommonStep.sendKeys;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import org.apache.commons.configuration.ConfigurationUtils;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+import org.hamcrest.Matchers;
+import org.openqa.selenium.By;
 
-import com.qmetry.qaf.automation.core.DriverFactory;
+import com.qmetry.qaf.automation.step.CommonStep;
 import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
-import com.qmetry.qaf.example.pages.GoogleHome;
+import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
+import com.qmetry.qaf.automation.util.Validator;
 
-public class StepsLibrary extends WebDriverBaseTestPage<WebDriverTestPage>{
+public class StepsLibrary extends WebDriverBaseTestPage<WebDriverTestPage> {
+
+	private static final int DEFAULT_TIMEOUT = 20;
 	
-	private WebDriver driver;
-		
-	@QAFTestStep(description = "navigate to {url}")
-	public void navigateToURL(String url) throws IOException {
+	@QAFTestStep(description = "set up test")
+	public void setUpTest() throws IOException {
 		Properties prop = new Properties();
 		InputStream input = new FileInputStream("resources/application.properties");
 		prop.load(input);
-		if (prop.getProperty("browser").toString().equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
-		}
-		if (prop.getProperty("browser").toString().equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
-		}
-		driver.get(prop.getProperty("env.baseurl"));
+		CommonStep.get(prop.getProperty("env.baseurl"));
+		driver.manage().window().maximize();
 	}
 	
-	@QAFTestStep(description = "search for {0}")
-	public void searchFor(String searchTerm) {
-		sendKeys(searchTerm+Keys.ENTER, "input.search");
-		GoogleHome ggHomePage = new GoogleHome();
-		ggHomePage.sendTextToSearchBox("123");
+	@QAFTestStep(description = "click on button with value {value}")
+	public void clickOnButtonWithValue(String value) throws IOException {
+		String xpath = String.format("//*[normalize-space(text())='%s']", value);
+		QAFWebElement we = driver.findElement(By.xpath(xpath));
+		we.click();
+	}
+	
+	public static void performTextValidation(String actual, String expected) {
+		Validator.verifyThat(actual, Matchers.equalTo(expected));
+	}
+
+	public static boolean waitUntilElementExisted(QAFWebElement we) {
+		try {
+			we.waitForVisible(DEFAULT_TIMEOUT * 1000);
+			return true;
+		} catch (Exception e1) {
+			return false;
+		}
 	}
 
 	@Override
 	protected void openPage(PageLocator locator, Object... args) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }

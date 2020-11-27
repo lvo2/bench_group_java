@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Sample">
-  <test name="Test">
+<suite name="TC01">
+  <test name="TC01">
     <method-selectors>
       <method-selector>
         <script language="beanshell">
@@ -12,5 +12,5 @@
     <classes>
       <class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Sample -->
+  </test> <!-- TC01 -->
+</suite> <!-- TC01 -->

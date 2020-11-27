@@ -1,0 +1,4 @@
+login.input.emailAddress=id=email
+login.input.password=id=passwd
+login.button.signIn=id=SubmitLogin
+login.button.userName=xpath=//a[@class='account']
