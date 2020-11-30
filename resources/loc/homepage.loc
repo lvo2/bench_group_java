@@ -1,1 +1,2 @@
 homepage.button.signIn=xpath=//a[@class='login']
+homepage.btn.contactUs=xpath=//div[@id='contact-link']
