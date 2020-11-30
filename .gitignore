@@ -1,6 +1,7 @@
 logs/
 target/
-test-output/
-test-results/
 /img
 debug.log
+/test-results/
+
+/test-output/
