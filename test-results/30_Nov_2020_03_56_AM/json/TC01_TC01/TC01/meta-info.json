@@ -1,0 +1,28 @@
+{
+  "methods": [
+    {
+      "index": 1,
+      "retryCount": null,
+      "type": "test",
+      "args": [],
+      "metaData": {
+        "description": "",
+        "groups": [
+          "@TC01.01",
+          "@TC01"
+        ],
+        "lineNo": 5,
+        "name": "Sample Test",
+        "reference": "scenarios/TC01.feature",
+        "resultFileName": "SampleTest",
+        "sign": "scenarios.TC01.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]"
+      },
+      "dependsOn": [],
+      "doc": null,
+      "startTime": 1606708739616,
+      "duration": 27449,
+      "result": "pass",
+      "passPer": 0.0
+    }
+  ]
+}

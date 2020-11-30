@@ -1,0 +1,14 @@
+10:58:59 scenario.file.loc[Ljava.lang.String;@311bf055
+10:58:59 loading feature file: C:\Users\ptruong20\Documents\GitHub\bench_group_java\.\scenarios\TC01.feature
+10:58:59 total test found: 1
+10:58:59 
+
+Executing scenario: Sample Test - 
+10:58:59 pkg: com.qmetry.qaf.automation.step
+10:58:59 pkg: com.qmetry.qaf.example
+10:58:59 Found duplicate step to load [] with [lower] prority then []
+10:58:59 Invoking Teststep: Given login into system
+10:59:26 Completed Teststep: Given login into system
+10:59:26 Invoking Teststep: Then verify that successfully login
+10:59:27 Completed Teststep: Then verify that successfully login
+10:59:27 Competed scenario: Sample Test with status SUCCESS

@@ -1,0 +1,94 @@
+[main] 10:58:58,915 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFAnnotationTransformer2] QAFTestNGListener registered!...
+[main] 10:58:58,924 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] QAFTestNGListener registered!...
+[main] 10:58:58,925 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFMethodInterceptor] QAFTestNGListener registered!...
+[main] 10:58:58,927 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFResultListener] QAFTestNGListener registered!...
+[main] 10:58:58,928 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFSuiteListener] QAFTestNGListener registered!...
+[main] 10:58:59,120 INFO  [com.qmetry.qaf.automation.core.ConfigurationManager] ISFW build info: {qaf-Type=core, qaf-Revision=0, qaf-Build-Time=26-Jul-2020 22:16:34, qaf-Version=3.0}
+[main] 10:58:59,134 INFO  [com.qmetry.qaf.automation.core.ConfigurationManager] Resource dir: C:\Users\ptruong20\Documents\GitHub\bench_group_java\resources. Found property files to load: 3
+[main] 10:58:59,175 INFO  [com.qmetry.qaf.automation.core.ConfigurationManager] Resource dir: C:\Users\ptruong20\Documents\GitHub\bench_group_java\resources. Found property files to load: 1
+[main] 10:58:59,180 DEBUG [org.apache.commons.configuration.ConfigurationUtils] ConfigurationUtils.locate(): base is null, name is null
+[main] 10:58:59,379 ERROR [com.qmetry.qaf.automation.util.PropertyUtil] Error parsing null
+[main] 10:58:59,578 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: setupSuit
+[main] 10:58:59,584 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: setupSuit - com.qmetry.qaf.automation.testng.TestNGTestCase is test:false
+[main] 10:58:59,584 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 10:58:59,597 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: setupTest
+[main] 10:58:59,599 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: setupTest - com.qmetry.qaf.automation.testng.TestNGTestCase is test:false
+[main] 10:58:59,599 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 10:58:59,601 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFMethodInterceptor] Method Order interceptor called
+[main] 10:58:59,605 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: setup
+[main] 10:58:59,606 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: setup - com.qmetry.qaf.automation.testng.TestNGTestCase is test:false
+[main] 10:58:59,606 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 10:58:59,615 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: setupMethod
+[main] 10:58:59,616 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: setupMethod - com.qmetry.qaf.automation.testng.TestNGTestCase is test:false
+[main] 10:58:59,616 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 10:58:59,621 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFResultListener] onTestStart: start
+[main] 10:58:59,621 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: Sample Test
+[main] 10:58:59,817 INFO  [com.qmetry.qaf.automation.core.QAFTestBase] Initializing Driver...browser_str:ChromeDriver,base_url:http://automationpractice.com/,sel_server:localhost,port:4444
+[main] 10:58:59,831 INFO  [com.qmetry.qaf.automation.ui.UiDriverFactory] Driver: ChromeDriver
+[main] 10:59:03,231 INFO  [com.qmetry.qaf.automation.core.QAFTestBase] driver init done
+[main] 10:59:03,252 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing get parameters: {"url":"http://automationpractice.com/"}
+[main] 10:59:15,728 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: get[ param-1: {url=http://automationpractice.com/}] Result: null
+[main] 10:59:15,732 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing maximizeCurrentWindow parameters: {}
+[main] 10:59:16,867 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: maximizeCurrentWindow[ param-1: {}] Result: {height=1056, width=1936, x=-8, y=-8}
+[main] 10:59:16,881 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElements parameters: {"value":"//a[@class='login']","using":"xpath"}
+[main] 10:59:16,910 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElements[ param-1: {value=//a[@class='login'], using=xpath}] Result: [id: 079ba5a7-892b-47d6-9c7d-cc26721187db]
+[main] 10:59:16,910 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement element: By.xpath: //a[@class='login'] parameters: {}
+[main] 10:59:16,914 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement parameters: {"value":"//a[@class='login']","using":"xpath"}
+[main] 10:59:16,933 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: {value=//a[@class='login'], using=xpath}] Result: id: 079ba5a7-892b-47d6-9c7d-cc26721187db
+[main] 10:59:16,933 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: By.xpath: //a[@class='login'] param-2: {}] Result: OK
+[main] 10:59:16,934 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing isElementDisplayed element: By.xpath: //a[@class='login'] parameters: {"id":"079ba5a7-892b-47d6-9c7d-cc26721187db"}
+[main] 10:59:16,987 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: isElementDisplayed[ param-1: By.xpath: //a[@class='login'] param-2: {"id":"079ba5a7-892b-47d6-9c7d-cc26721187db"}] Result: isElementDisplayed:true
+[main] 10:59:16,987 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement element: By.xpath: //a[@class='login'] parameters: {}
+[main] 10:59:16,988 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement parameters: {"value":"//a[@class='login']","using":"xpath"}
+[main] 10:59:17,000 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: {value=//a[@class='login'], using=xpath}] Result: id: 079ba5a7-892b-47d6-9c7d-cc26721187db
+[main] 10:59:17,001 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: By.xpath: //a[@class='login'] param-2: {}] Result: OK
+[main] 10:59:17,001 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing clickElement element: By.xpath: //a[@class='login'] parameters: {"id":"079ba5a7-892b-47d6-9c7d-cc26721187db"}
+[main] 10:59:21,454 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: clickElement[ param-1: By.xpath: //a[@class='login'] param-2: {"id":"079ba5a7-892b-47d6-9c7d-cc26721187db"}] Result: clickElement:null
+[main] 10:59:22,455 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement element: By.id: email parameters: {}
+[main] 10:59:22,456 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement parameters: {"value":"email","using":"id"}
+[main] 10:59:22,473 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: {value=email, using=id}] Result: id: 254795d0-99ef-476d-a10c-bd7984b08719
+[main] 10:59:22,473 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: By.id: email param-2: {}] Result: OK
+[main] 10:59:22,474 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing sendKeysToElement element: By.id: email parameters: {"value":["accsoulseeker01@gmail.com"],"id":"254795d0-99ef-476d-a10c-bd7984b08719"}
+[main] 10:59:22,583 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: sendKeysToElement[ param-1: By.id: email param-2: {"value":["accsoulseeker01@gmail.com"],"id":"254795d0-99ef-476d-a10c-bd7984b08719"}] Result: sendKeysToElement:null
+[main] 10:59:22,583 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement element: By.id: passwd parameters: {}
+[main] 10:59:22,584 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement parameters: {"value":"passwd","using":"id"}
+[main] 10:59:22,604 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: {value=passwd, using=id}] Result: id: 2335899c-6ff4-42e7-8190-e10e9a7f550a
+[main] 10:59:22,604 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: By.id: passwd param-2: {}] Result: OK
+[main] 10:59:22,605 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing sendKeysToElement element: By.id: passwd parameters: {"value":["testtest"],"id":"2335899c-6ff4-42e7-8190-e10e9a7f550a"}
+[main] 10:59:22,704 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: sendKeysToElement[ param-1: By.id: passwd param-2: {"value":["testtest"],"id":"2335899c-6ff4-42e7-8190-e10e9a7f550a"}] Result: sendKeysToElement:null
+[main] 10:59:22,704 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement element: By.id: SubmitLogin parameters: {}
+[main] 10:59:22,705 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement parameters: {"value":"SubmitLogin","using":"id"}
+[main] 10:59:22,723 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: {value=SubmitLogin, using=id}] Result: id: 3be46d07-a1ed-49a8-81ff-180f20ecddef
+[main] 10:59:22,723 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: By.id: SubmitLogin param-2: {}] Result: OK
+[main] 10:59:22,723 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing clickElement element: By.id: SubmitLogin parameters: {"id":"3be46d07-a1ed-49a8-81ff-180f20ecddef"}
+[main] 10:59:26,962 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: clickElement[ param-1: By.id: SubmitLogin param-2: {"id":"3be46d07-a1ed-49a8-81ff-180f20ecddef"}] Result: clickElement:null
+[main] 10:59:26,978 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElements parameters: {"value":"//a[@class='account']","using":"xpath"}
+[main] 10:59:26,999 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElements[ param-1: {value=//a[@class='account'], using=xpath}] Result: [id: 881eda56-1ac0-4af4-b952-78a572ed41fa]
+[main] 10:59:26,999 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement element: By.xpath: //a[@class='account'] parameters: {}
+[main] 10:59:26,999 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing findElement parameters: {"value":"//a[@class='account']","using":"xpath"}
+[main] 10:59:27,024 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: {value=//a[@class='account'], using=xpath}] Result: id: 881eda56-1ac0-4af4-b952-78a572ed41fa
+[main] 10:59:27,024 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: findElement[ param-1: By.xpath: //a[@class='account'] param-2: {}] Result: OK
+[main] 10:59:27,025 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing isElementDisplayed element: By.xpath: //a[@class='account'] parameters: {"id":"881eda56-1ac0-4af4-b952-78a572ed41fa"}
+[main] 10:59:27,064 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: isElementDisplayed[ param-1: By.xpath: //a[@class='account'] param-2: {"id":"881eda56-1ac0-4af4-b952-78a572ed41fa"}] Result: isElementDisplayed:true
+[main] 10:59:27,065 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Sample Test - com.qmetry.qaf.automation.step.client.Scenario is test:true
+[main] 10:59:27,065 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 10:59:27,095 DEBUG [com.qmetry.qaf.automation.testng.report.ReporterUtil] method:  result: pass groups: {description=, groups=[Ljava.lang.String;@35342d2f, lineNo=5, name=Sample Test, reference=scenarios/TC01.feature, resultFileName=SampleTest, sign=scenarios.TC01.feature.Sample Test()[pri:1000, instance:com.qmetry.qaf.automation.step.client.Scenario@3e8]}
+[main] 10:59:27,108 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: afterMethod
+[main] 10:59:27,109 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: afterMethod - com.qmetry.qaf.automation.ui.AbstractTestCase is test:false
+[main] 10:59:27,109 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 10:59:27,111 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: afterClass
+[main] 10:59:27,111 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: afterClass - com.qmetry.qaf.automation.ui.AbstractTestCase is test:false
+[main] 10:59:27,111 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 10:59:27,113 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: afterTest
+[main] 10:59:27,114 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] Executing quit parameters: {}
+[main] 10:59:27,313 INFO  [com.qmetry.qaf.automation.ui.WebDriverCommandLogger] command: quit[ param-1: {}] Result: null
+[main] 10:59:27,313 INFO  [com.qmetry.qaf.automation.ui.UiDriverFactory] UI-driver tear down complete...
+[main] 10:59:27,313 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: afterTest - com.qmetry.qaf.automation.ui.AbstractTestCase is test:false
+[main] 10:59:27,313 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 10:59:27,357 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFResultListener] onfinish testcntext: start
+[main] 10:59:27,374 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] beforeInvocation: afterSuit
+[main] 10:59:27,375 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: afterSuit - com.qmetry.qaf.automation.testng.TestNGTestCase is test:false
+[main] 10:59:27,376 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFInvokedMethodListener2] afterInvocation: Done
+[main] 10:59:27,378 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFSuiteListener] onFinish: start
+[main] 10:59:27,400 DEBUG [com.qmetry.qaf.automation.testng.pro.QAFSuiteListener] onFinish: done
+[Thread-0] 10:59:27,726 INFO  [com.qmetry.qaf.automation.ui.webdriver.ChromeDriverHelper] Stopping chrome driver service.
