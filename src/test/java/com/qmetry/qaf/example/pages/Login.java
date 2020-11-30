@@ -24,6 +24,9 @@ public class Login extends StepsLibrary {
 	@FindBy(locator = "login.button.userName")
 	QAFWebElement userName;
 	
+	@FindBy(locator = "login.button.signOut")
+	QAFWebElement signOut;
+	
 	public void login() throws IOException {
 		Properties prop = new Properties();
 		InputStream input = new FileInputStream("resources/application.properties");
@@ -31,11 +34,15 @@ public class Login extends StepsLibrary {
 		QAFTestBase.pause(1000);
 		emailAddress.sendKeys(prop.getProperty("username"));
 		password.sendKeys(prop.getProperty("password"));
-		signIn.click();
+		clickOnElement(signIn);
 	}
 	
 	public boolean userNameIsDisplayed() {
 		return waitUntilElementExisted(userName)?true:false;
+	}
+	
+	public void signOut() {
+		clickOnElement(signOut);
 	}
 
 }

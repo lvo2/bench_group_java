@@ -13,7 +13,7 @@ public class HomePage extends StepsLibrary {
 	
 	public void clickOnSignInButton() {
 		signIn.waitForVisible(DEFAULT_TIMEOUT*1000);
-		signIn.click();
+		clickOnElement(signIn);
 	}
 
 }
