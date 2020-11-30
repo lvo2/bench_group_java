@@ -1,10 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TC01" verbose="0">
-
+	<parameter name="username" value="invalidUserName@gmail.com"/>
+	<parameter name="password" value="invalidPassword"/>
 	<test name="TC01" enabled="true">
 		<groups>
 			<run>
-				<include name="@TC01.01" />				
+				<include name="@TC01" />
 			</run>
 		</groups>
 		<classes>
