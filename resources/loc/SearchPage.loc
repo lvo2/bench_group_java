@@ -1,0 +1,1 @@
+SearchPage.page=xpath=//div[@class='breadcrumb clearfix']//*[text()='Search']

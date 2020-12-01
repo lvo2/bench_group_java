@@ -19,6 +19,7 @@ import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
+import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
 import com.qmetry.qaf.automation.util.Validator;
 
@@ -70,6 +71,14 @@ public class StepsLibrary extends WebDriverBaseTestPage<WebDriverTestPage> {
 				}
 			}
 		} while (i < DEFAULT_TIMEOUT);
+	}
+	
+	public static void clickOnElement(QAFExtendedWebElement ele) throws Exception {
+		try {
+			ele.click();
+		} catch (Exception e) {
+			ele.executeScript("click()");
+		}
 	}
 	
 	public void setColor(QAFWebElement we) {
