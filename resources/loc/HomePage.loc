@@ -1,2 +1,10 @@
 homepage.button.signIn=xpath=//a[@class='login']
 homepage.btn.contactUs=xpath=//div[@id='contact-link']
+homepage.txt.search=xpath=//input[contains(@name, 'search')]
+homepage.btn.search=xpath=//button[@name='submit_search']
+homepage.btn.Menu.Women=xpath=//a[text()='Women']
+homepage.btn.Menu.Dresses=xpath=//ul[contains(@class,'menu-content')]/li[@class='sfHoverForce']//a[text()='Dresses']
+homepage.btn.Menu.TShirts=xpath=//ul[contains(@class,'menu-content')]/li[3]//a[text()='T-shirts']
+homepage.btn.Menu.TShirts=xpath=//ul[contains(@class,'menu-content')]/li[3]//a[text()='T-shirts']
+homepage.btn.viewShoppingCart=xpath=//div[@class='shopping_cart']//a[@title='View my shopping cart']
+
