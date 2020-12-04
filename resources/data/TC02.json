@@ -1,0 +1,31 @@
+[
+	{		
+		"UserInfo": {
+			"PersonalInformation": {
+				"title": "Mrs.",
+				"firstName": "TC02",
+				"lastName": "Test Personal Information",
+				"email": "TC02@gmail.com",
+				"password": "testtest",
+				"dob": "12/October/1997",
+				"newsletter": "yes",
+				"receiveOffers": "yes"
+			},
+			"AddressInformation": {
+				"firstName": "TC02",
+				"lastName": "Test Address",
+				"company": "DXC",
+				"address": "364 Cong Hoa",
+				"address2": "home",
+				"city": "Ho Chi Minh",
+				"State": "Texas",
+				"zipCode": "98000",
+				"country": "United States",
+				"additionalInformation": "Additional information test",
+				"homePhone": "123",
+				"mobilePhone": "0123456789",
+				"assignAnAddress": "My address"
+			}
+		}
+	}
+]

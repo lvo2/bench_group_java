@@ -1,6 +1,8 @@
 login.input.emailAddress=id=email
+login.input.createEmailAddress=id=email_create
 login.input.password=id=passwd
 login.button.signIn=id=SubmitLogin
 login.button.userName=className=account
 login.text.errorMessage1=xpath=//div[@class='alert alert-danger']/ol/li
 login.button.signOut=xpath=//a[@class='logout']
+login.button.createAnAccount=id=SubmitCreate

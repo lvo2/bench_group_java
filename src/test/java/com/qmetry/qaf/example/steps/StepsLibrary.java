@@ -1,22 +1,19 @@
 package com.qmetry.qaf.example.steps;
 
-import static com.qmetry.qaf.automation.ui.webdriver.ElementFactory.$;
-
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Properties;
+import java.util.HashMap;
 
 import org.hamcrest.Matchers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
-import com.qmetry.qaf.automation.step.CommonStep;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.automation.ui.WebDriverBaseTestPage;
-import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.api.PageLocator;
 import com.qmetry.qaf.automation.ui.api.WebDriverTestPage;
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
@@ -90,6 +87,38 @@ public class StepsLibrary extends WebDriverBaseTestPage<WebDriverTestPage> {
 		js.executeScript(String.format(
 				"arguments[0].setAttribute('style', 'background:linear-gradient(to right, %s) !important;color:#E74856 !important')",
 				color), we);
+	}
+	
+	@SuppressWarnings("unchecked")
+	public static HashMap<String, Object> jsonObjectToHashMap(Object data, String objectName) throws Exception {
+		JsonObject jsonObject = new Gson().toJsonTree(data).getAsJsonObject();
+		HashMap<String, Object> result;
+		HashMap<String, Object> resultBasicInfo;
+
+		result = new ObjectMapper().readValue(jsonObject.toString(), HashMap.class);
+		JsonObject jsonObjectBasicInfo = new Gson().toJsonTree(result.get(objectName)).getAsJsonObject();
+		resultBasicInfo = new ObjectMapper().readValue(jsonObjectBasicInfo.toString(), HashMap.class);
+		return resultBasicInfo;
+	}
+	
+	/*	Section with array value
+	public static Beneficiary[] jsonObjectToBeneficiaryArray(Object data) throws Exception {
+		JsonObject jsonObject = new Gson().toJsonTree(data).getAsJsonObject();
+		HashMap<String, Object> result;
+		ObjectMapper mapper = new ObjectMapper();
+
+		result = new ObjectMapper().readValue(jsonObject.toString(), HashMap.class);
+		JsonArray jsonArrBeneficiary = new Gson().toJsonTree(result.get("BeneficiariesInfo")).getAsJsonArray();
+		return mapper.readValue(jsonArrBeneficiary.toString(), Beneficiary[].class);
+	}
+	*/
+	
+	public static String tryToGetHashMapValue(HashMap<String, Object> resultBasicInfo, String key) {
+		try {
+			return resultBasicInfo.get(key).toString();
+		} catch (Exception e) {
+			return "";
+		}
 	}
 
 	@Override
