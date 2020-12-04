@@ -1,0 +1,4 @@
+registration.radio.title.mr=xpath=//label[@for='id_gender1']
+registration.radio.title.mrs=xpath=//label[@for='id_gender2']
+registration.input.firstName=id=customer_firstname
+registration.input.lastName=id=customer_lastname

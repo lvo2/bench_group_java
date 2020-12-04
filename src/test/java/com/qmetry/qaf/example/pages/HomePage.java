@@ -6,13 +6,10 @@ import com.qmetry.qaf.example.steps.StepsLibrary;
 
 public class HomePage extends StepsLibrary {
 	
-	private static final int DEFAULT_TIMEOUT = 10;
-	
 	@FindBy(locator = "homepage.button.signIn")
 	QAFWebElement signIn;
 	
 	public void clickOnSignInButton() {
-		signIn.waitForVisible(DEFAULT_TIMEOUT*1000);
 		clickOnElement(signIn);
 	}
 

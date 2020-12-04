@@ -1,12 +1,12 @@
 @TC02
-Feature: Login Feature
+Feature: Registration Feature
 
-@TC02.01 
-Scenario:  Click Search button without entering any keyword 
-	Given login into system
-	Then verify that successfully login
-	When I click on "Search" button
-	Then I will be show Search page
-	And I see message "Please enter a search keyword" in screen
-	
-	
+@TC02.01_Registration_with_valid_fields
+Scenario Outline: TC02.01
+	Given direct to home page
+	When click on button with value 'Sign in'
+	And sendKeys '${username}' into 'login.input.createEmailAddress'
+	And click on 'login.button.createAnAccount'
+	And fill user data for creating user based on '<UserInfo>'
+    
+    Examples: {'datafile':'resources/data/TC02.json'}

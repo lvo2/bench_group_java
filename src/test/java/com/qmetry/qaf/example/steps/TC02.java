@@ -1,47 +1,36 @@
 package com.qmetry.qaf.example.steps;
 
-import static org.testng.Assert.assertTrue;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.util.HashMap;
 import java.util.Properties;
 
-import org.testng.Assert;
-
-import com.qmetry.qaf.automation.step.CommonStep;
 import com.qmetry.qaf.automation.step.QAFTestStep;
-import com.qmetry.qaf.automation.ui.annotations.FindBy;
-import com.qmetry.qaf.automation.ui.webdriver.QAFExtendedWebElement;
-import com.qmetry.qaf.automation.ui.webdriver.QAFWebElement;
 import com.qmetry.qaf.example.pages.HomePage;
+import com.qmetry.qaf.example.pages.Login;
+import com.qmetry.qaf.example.pages.Registration;
 
-public class TC02 extends StepsLibrary{
-	@FindBy(locator = "SearchPage.page")
-	QAFWebElement searchPage;
-	
+public class TC02 extends StepsLibrary {
+
 	HomePage homePage = new HomePage();
+	Login loginPage = new Login();
+	Registration registrationPage = new Registration();
 	Properties prop = new Properties();
 
-	@QAFTestStep(description = "I click on {0} button")
-	public void clickOnButton(String button) throws Exception {
-		String xpath = String.format("//*[contains(text(),'%s')]", button);
-		QAFExtendedWebElement ele = new QAFExtendedWebElement(xpath);
-		ele.waitForPresent(3000);
-		clickOnElement(ele);
+	@QAFTestStep(description = "fill user data for creating user based on {data}")
+	public void loginIntoSystem(Object data) throws Exception {
+		HashMap<String, Object> resultInfo = null;
+		resultInfo = jsonObjectToHashMap(data, "PersonalInformation");
+		String title = tryToGetHashMapValue(resultInfo, "title");
+		String firstName = tryToGetHashMapValue(resultInfo, "firstName");
+		String lastName = tryToGetHashMapValue(resultInfo, "lastName");
+		String email = tryToGetHashMapValue(resultInfo, "email");
+		String password = tryToGetHashMapValue(resultInfo, "password");
+		String dob = tryToGetHashMapValue(resultInfo, "dob");
+		String newsletter = tryToGetHashMapValue(resultInfo, "newsletter");
+		String receiveOffers = tryToGetHashMapValue(resultInfo, "receiveOffers");
+
+		registrationPage.selectGender(title);
+		registrationPage.setFirstName(firstName);
+		registrationPage.setLastName(lastName);
 	}
-	
-	@QAFTestStep(description = "I will be show Search page")
-	public void iWillBeShownSearchPage() throws Exception {
-		if (!searchPage.isPresent()) {
-			Assert.fail("Search page is NOT displayed.");
-		}
-	}
-	
-	@QAFTestStep(description = "I see message {0} in screen")
-	public void iSeeMessageInScreen(String message) throws IOException {
-		String xpath = String.format("//*[contains(text(),'%s')]", message);
-		QAFExtendedWebElement ele = new QAFExtendedWebElement(xpath);
-		assertTrue(ele.isPresent());
-	}
+  
 }
