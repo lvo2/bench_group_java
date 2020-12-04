@@ -32,5 +32,5 @@ public class TC02 extends StepsLibrary {
 		registrationPage.setFirstName(firstName);
 		registrationPage.setLastName(lastName);
 	}
-
+  
 }
