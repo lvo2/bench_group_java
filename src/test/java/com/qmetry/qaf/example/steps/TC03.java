@@ -19,7 +19,6 @@ public class TC03 extends StepsLibrary {
     	categoryPage.moveToElement(productName);
         String xpath = String.format("//ul[contains(@class,'product_list')]/li[contains(@class,'hovered')]//span[text()='%s']", button);
         QAFExtendedWebElement ele = new QAFExtendedWebElement(xpath);
-        waitUntilElementExisted(ele);
         clickOnElement(ele);
     }
    
